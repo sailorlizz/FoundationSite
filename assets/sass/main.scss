@@ -220,7 +220,34 @@ footer{
 
 
 
+/* 2. Stories Page ================================= */
 
 
-/* 2. Content ================================= */
+.hero2{
+	
+	h2{
+		font-size: 2.3em;
+		width: 50%;
+		padding:30px;
+	}
 
+	p{
+		font-size: 1.2em;
+		width: 50%;
+		margin-left:30px;
+		margin-bottom:30px;
+	}
+
+}
+
+//emblem of read more below or button
+
+.hero2img{
+	background-image:url(../img/ppprotest.jpg);
+	height:600px;
+	width:100%;
+	background-size:cover;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+
+}
