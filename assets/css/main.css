@@ -68,15 +68,16 @@ a {
     padding-top: 50px;
     float: left; }
 
-.sign {
+button {
   width: 25%;
   border: 1px solid black;
   border-radius: inherit;
   padding: 20px;
   color: black;
   margin-top: 92px;
-  margin-left: 100px; }
-  .sign a {
+  margin-left: 100px;
+  height: 75px; }
+  button a {
     color: #E90081;
     font-family: 'Open sans', sans-serif;
     font-size: 2em;
@@ -93,22 +94,12 @@ a {
   background-blend-mode: darken;
   display: flex; }
   .trump h2 {
-    font-family: "Poppins", sans-serif;
     font-size: 2.3em;
     width: 55%;
     padding-top: 134px;
     padding-left: 50px;
     color: white;
     line-height: 45px; }
-  .trump button {
-    border: 1px solid black;
-    border-radius: inherit;
-    padding: 20px;
-    color: black;
-    align-self: center;
-    margin-bottom: 20px;
-    font-family: "Poppins", sans-serif;
-    color: #E90081; }
 
 .impact {
   background-image: url(../img/fam.jpg);
@@ -118,23 +109,39 @@ a {
   height: 400px;
   background-attachment: fixed; }
   .impact h2 {
-    font-family: "Poppins", sans-serif;
     font-size: 2.3em;
-    color: black; }
+    width: 45%;
+    padding-top: 134px;
+    padding-left: 50px;
+    color: white;
+    line-height: 45px; }
+
+.atrisk {
+  background-color: #F4F3F4;
+  height: 500px; }
+  .atrisk h2 {
+    color: black;
+    font-size: 2.3em;
+    padding-left: 50px;
+    padding-top: 50px; }
+  .atrisk p {
+    font-family: "Poppins", sans-serif;
+    color: #E90081;
+    font-size: 1em;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 45%;
+    line-height: 1.4; }
 
 footer {
-  background-color: #0D1936;
+  background-color: #E90081;
   width: 100%;
   height: 100px; }
   footer a {
     color: white;
     display: inline-block; }
     footer a:hover {
-      color: #ddd; }
-
-.atrisk {
-  background-color: #F4F3F4;
-  height: 500px; }
+      color: black; }
 
 /* 2. Content ================================= */
 
