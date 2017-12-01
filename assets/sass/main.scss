@@ -1,13 +1,14 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	Foundation Site/ Final WEBDEV3
+AUTHOR:		Lizz Lanius
 ==============================================
 
 TABLE OF CONTENTS:
 
-1. Main Layout
-2. Content
+1. Nav
+2. Hero/Homepage
+3. Storie Page
 
 ==============================================
 */
@@ -19,6 +20,13 @@ h2{
 	font-family:$font-stack;
 }
 
+a{
+	font-family:$font-stack;
+}
+
+// MAKE IT RESPONSIVE LIZZ WTF
+
+@media screen and (min-width: 0px){}
 
 /* 1 NAV ================================= */
 
@@ -40,29 +48,28 @@ h2{
 
 	}
 
-}
 
-a{
-	text-decoration:none;
-	padding:20px;
-	font-family:$font-stack;
-	margin-top:30px;
-	color:white;
 
-	&:hover{
-		color:#000;
-		transition: 0.2s;
-		// font-weight: bold; - why doesn't this work
+	a{
+		text-decoration:none;
+		padding:20px;
+		font-family:$font-stack;
+		margin-top:30px;
+		color:white;
+
+		&:hover{
+			color:#000;
+			transition: 0.2s;
+			// font-weight: bold; - why doesn't this work
+		}
 	}
-
-
 }
 
-/* 1 Hero/HomePage ================================= */
+/* 2 Hero/HomePage ================================= */
 
 .hero{
 
-	height:800px; //why is this needed? 
+	height:800px; 
 	background-image:url(../img/headerBC.png);
 	background-repeat:no-repeat;
 	background-size:cover; //why isn't this working?
@@ -114,20 +121,17 @@ button{
 
 
 
+
 	a{
 		color:$color;
-		font-family: 'Open sans', sans-serif;
 		font-size: 2em;
 		text-align:center;
 		padding-top:2px;
+		text-decoration:none;
 	}
 
 
 }
-
-// DIFFERENT BUTTONS FOR NEW SECTIONS/TRANSPARENT BUTTONS/
-// WHITE OUTLINES maybe hover with a color too
-
 
 
 .trump{
@@ -135,22 +139,39 @@ button{
 	background-size:cover;
 	background-repeat: no-repeat;
 	width:100%;
-	height:500px; 
 	background-color:$color;
 	background-blend-mode:darken;
-	display:flex;
+	padding: 134px 50px;
+   
+
 
 	h2{
     font-size: 2.3em;
     width: 55%;
-    padding-top: 134px;
-    padding-left: 50px;
     color:white;
     line-height: 45px;
+  	
+	}
+
+
+	
+	a{
+		background-color:rgba(0,0,0,0);
+		height: 20px;
+		width: 100px;
+		text-decoration: none;
+		font-family: $font-stack;
+		padding:20px;
+		border: 1px solid white;
+		color:white;	
+		display: block;
+		margin: 100px auto 0;
+
 	}
 	
-	
-}
+
+} 	
+
 
 .impact{
 	background-image:url(../img/fam.jpg);
@@ -201,26 +222,12 @@ button{
 
 
 
-footer{
-	background-color:$color;
-	width:100%;
-	height:100px;
-
-
-	a{
-		color:white;
-		display: inline-block;
-		
-		&:hover{
-			color:black;
-		}
-	}
+@media screen and (min-width: 768px){
 
 }
 
 
-
-/* 2. Stories Page ================================= */
+/* 3. Stories Page ================================= */
 
 
 .hero2{
