@@ -13,6 +13,7 @@ TABLE OF CONTENTS:
 ==============================================
 */
 
+
 $font-stack: 'Poppins', sans-serif;
 $color:#E90081;
 
@@ -22,11 +23,19 @@ h2{
 
 a{
 	font-family:$font-stack;
+	text-decoration:none;
+}
+
+p{
+	line-height:1.4;
+	font-family: 'Open Sans', sans-serif;
 }
 
 // MAKE IT RESPONSIVE LIZZ WTF
 
-@media screen and (min-width: 0px){}
+// @media screen and (min-width:0px);{
+
+
 
 /* 1 NAV ================================= */
 
@@ -48,8 +57,6 @@ a{
 
 	}
 
-
-
 	a{
 		text-decoration:none;
 		padding:20px;
@@ -60,10 +67,13 @@ a{
 		&:hover{
 			color:#000;
 			transition: 0.2s;
-			// font-weight: bold; - why doesn't this work
+			
 		}
 	}
+
+
 }
+
 
 /* 2 Hero/HomePage ================================= */
 
@@ -72,7 +82,7 @@ a{
 	height:800px; 
 	background-image:url(../img/headerBC.png);
 	background-repeat:no-repeat;
-	background-size:cover; //why isn't this working?
+	background-size:cover; 
 	background-position:20%;
 	background-attachment:fixed;
 
@@ -80,47 +90,41 @@ a{
 
 
 .petition{
-	// display:flex;
 	background-color:#fff;
 	height:400px;
-	flex-direction:column;
+	width:100%;
+	margin:40px;
+	display:flex;
+	flex-wrap:wrap;
+
 
 	h2{
-	
 		font-size: 5em;
-		padding:10px;
 		text-align:center;
 		color:black;
 		font-weight: bold;
-		padding-top: 30px;
+		width: 100%;
+
 
 	}
 
 	p{
-		font-family: 'Open sans', sans-serif;
 		font-size: 1.4em;
-		line-height: 30px;
 		color:$color;
 		width: 40%;
-		padding-left:141px;
-		padding-top:50px;
-		float:left;
+		margin-right: 230px;
+    	margin-left: 130px;
 
 	}
 }
 
 button{
 	width:25%;
-	border:1px solid black;
+	border:2px solid black;
 	border-radius:inherit;
-	padding:20px;
 	color:black;
-	margin-top: 92px;
-	margin-left: 100px; 
 	height:75px;
-
-
-
+	margin-top:20px;
 
 	a{
 		color:$color;
@@ -129,19 +133,19 @@ button{
 		padding-top:2px;
 		text-decoration:none;
 	}
-
-
 }
 
 
 .trump{
 	background-image:url(../img/trumpapp.jpg);
 	background-size:cover;
+	background-position:20%;
 	background-repeat: no-repeat;
 	width:100%;
 	background-color:$color;
 	background-blend-mode:darken;
 	padding: 134px 50px;
+
    
 
 
@@ -150,6 +154,7 @@ button{
     width: 55%;
     color:white;
     line-height: 45px;
+    margin-bottom: 40px;
   	
 	}
 
@@ -159,72 +164,129 @@ button{
 		background-color:rgba(0,0,0,0);
 		height: 20px;
 		width: 100px;
-		text-decoration: none;
-		font-family: $font-stack;
 		padding:20px;
-		border: 1px solid white;
+		padding-left: 31px;
+		border: 2px solid white;
 		color:white;	
 		display: block;
-		margin: 100px auto 0;
+		margin: 0 auto;
 
 	}
 	
 
-} 	
+}
 
 
 .impact{
-	background-image:url(../img/fam.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:80%;
-	height:400px;
-	background-attachment:fixed;
+	position:relative;
 
 
+	video{
+		width: 100%;
+		position: relative;
 
-
-	h2{
-	  	font-size: 2.3em;
-    	width: 45%;
-	    padding-top: 134px;
-	    padding-left: 50px;
-	    color:white;
-	    line-height: 45px;
 	}
 
+	h2{
+	  	font-size: 5em;
+    	width: 80%;
+	    color:white;
+	    line-height: 1.2;
+	    position:absolute; 
+	    top:10%;
+	    padding:30px;
+	}
+	
+	p{
+		color:white;
+		position:absolute;
+		top:40%;
+		width: 50%;
+		padding:40px;
+		font-size: 1.5em;
+	}
 
+	a{
+		position:absolute;
+		background-color:rgba(0,0,0,0);
+		height: 20px;
+		width: 100px;
+		padding:20px;
+		padding-left: 31px;
+		border: 2px solid $color;
+		color:$color;
+		top:70%;
+		left:80%;
+	}
 }
 
 
 .atrisk{
-	background-color:#F4F3F4;
-	height:500px;
+	width:100%;
+	padding:50px;
 
 	h2{
 		color:black;
 		font-size: 2.3em;
-		padding-left:50px;
-		padding-top:50px;
+		width: 45%;
+		margin-bottom: 20px;
+
 
 		}
 	p{
-		font-family: $font-stack;
 		color:$color;
 		font-size: 1em;
-		padding-left:50px;
-		padding-top:20px;
-		width: 45%;
-		line-height: 1.4;
+		width: 25%;
 
 	}
 }
 
+.info-container{
+	display:flex;
+	width:100%;
+	height:350px;
+	justify-content:space-around;
 
-
-@media screen and (min-width: 768px){
 
 }
+
+
+.info{
+	border: 2px solid $color;
+	width:20%;
+	max-height:85px;
+	overflow:hidden;
+
+		&:hover{
+			color:black;
+			max-height: 300px;
+			overflow: visible;
+		}
+
+	h2{
+		color:$color;
+		font-size: 1.2em;
+		padding:20px;
+	
+	}
+
+	p{
+		color:black;
+		padding:20px;
+	}
+
+}
+
+
+// notes about the hover shit
+
+// overflow hidden on the content in html 
+// change the height or max height is 0 on the main p tag 
+// with overflow hidden and all then do the &hvoer and 
+// change the max height  	
+
+
+
 
 
 /* 3. Stories Page ================================= */
@@ -258,3 +320,5 @@ button{
 	background-repeat:no-repeat;
 
 }
+ // } //end desktop version
+
