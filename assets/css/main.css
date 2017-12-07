@@ -178,10 +178,42 @@ button {
   .info h2 {
     color: #E90081;
     font-size: 1.2em;
-    padding: 20px; }
+    padding: 12px; }
   .info p {
     color: black;
     padding: 20px; }
+
+@media screen and (max-width: 400px) {
+  .petition h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: -32px; }
+  .petition p {
+    font-size: 1em;
+    width: 350px;
+    margin: 0; }
+  .petition button {
+    width: 350px;
+    margin-left: -20px; }
+  .trump h2 {
+    font-size: 1.5em;
+    width: 286px;
+    line-height: 1.2; }
+  .impact h2 {
+    font-size: 1.2em; }
+  .impact p {
+    font-size: 12px;
+    width: 250px; }
+  .impact a {
+    width: 20px;
+    font-size: 12px;
+    height: 20px; }
+  .atrisk h2 {
+    width: 300px;
+    font-size: 1.2em; }
+  .atrisk p {
+    font-size: 1em;
+    width: 300px; } }
 
 /* 3. Stories Page ================================= */
 .hero2 h2 {

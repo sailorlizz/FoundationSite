@@ -31,13 +31,13 @@ p{
 	font-family: 'Open Sans', sans-serif;
 }
 
-// MAKE IT RESPONSIVE LIZZ WTF
 
 // @media screen and (min-width:0px);{
 
 
 
 /* 1 NAV ================================= */
+
 
 
 .navcontainer{
@@ -266,7 +266,7 @@ button{
 	h2{
 		color:$color;
 		font-size: 1.2em;
-		padding:20px;
+		padding:12px;
 	
 	}
 
@@ -284,8 +284,83 @@ button{
 // change the height or max height is 0 on the main p tag 
 // with overflow hidden and all then do the &hvoer and 
 // change the max height  	
+ @media screen and (max-width:400px){
+
+ // 	.hero{
+ // 		width: 100%;
+ // 		height: 200px; 
+ // 		background-size:200px;
+
+	// }
+
+	.petition{
+
+		h2{
+			font-size: 1.5em;
+			text-align: center;
+			margin-left:-32px;
+		}
+
+		p{
+			font-size: 1em;
+			width: 350px;
+			margin:0;
+
+		}
+
+		button{
+			width: 350px;
+			margin-left:-20px;
+		}
+	}
+
+.trump{
+
+	h2{
+		font-size: 1.5em;
+    	width: 286px;
+    	line-height: 1.2;
+	}
+}
+
+.impact{
+
+	h2{
+		font-size: 1.2em;
+	}
+
+	p{
+		font-size: 12px;
+		width: 250px;
+	}
+
+	a{
+		width: 20px;
+		font-size: 12px;
+		height: 20px;
+	}
+}
+
+.atrisk{
+	 h2{
+	 	width: 300px;
+	 	font-size: 1.2em;
+
+	 }
+
+	 p{
+	 	font-size: 1em;
+	 	width: 300px;
+	 }
+}
+
+.info{
+
+}
 
 
+
+}
 
 
 
@@ -320,5 +395,8 @@ button{
 	background-repeat:no-repeat;
 
 }
+
+
+
  // } //end desktop version
 
