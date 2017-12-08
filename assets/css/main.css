@@ -8,10 +8,13 @@ TABLE OF CONTENTS:
 
 1. Nav
 2. Hero/Homepage
-3. Storie Page
+3. Stories Page
 
 ==============================================
 */
+* {
+  box-sizing: border-box; }
+
 h2 {
   font-family: "Poppins", sans-serif; }
 
@@ -58,7 +61,6 @@ p {
 .petition {
   background-color: #fff;
   height: 400px;
-  width: 100%;
   margin: 40px;
   display: flex;
   flex-wrap: wrap; }
@@ -169,19 +171,61 @@ button {
 .info {
   border: 2px solid #E90081;
   width: 20%;
-  max-height: 85px;
-  overflow: hidden; }
-  .info:hover {
-    color: black;
-    max-height: 300px;
-    overflow: visible; }
+  align-self: flex-start; }
   .info h2 {
     color: #E90081;
     font-size: 1.2em;
     padding: 12px; }
   .info p {
     color: black;
-    padding: 20px; }
+    padding: 0;
+    max-height: 0;
+    overflow: hidden; }
+  .info:hover {
+    color: black; }
+    .info:hover p {
+      padding: 20px;
+      max-height: 300px; }
+
+@media screen and (max-width: 1024px) {
+  .petition h2 {
+    font-size: 1.5em;
+    text-align: center; }
+  .petition p {
+    font-size: 1em;
+    width: 350px;
+    margin: 0; }
+  .petition button {
+    width: 350px;
+    margin-left: -20px; }
+  .trump h2 {
+    font-size: 1.5em;
+    width: 286px;
+    line-height: 1.2; }
+  .impact h2 {
+    font-size: 1.2em; }
+  .impact p {
+    font-size: 12px;
+    width: 250px; }
+  .impact a {
+    width: 20px;
+    font-size: 12px;
+    height: 20px; }
+  .atrisk h2 {
+    width: 300px;
+    font-size: 1.2em; }
+  .atrisk p {
+    font-size: 1em;
+    width: 300px; }
+  .info-container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 100%; }
+    .info-container .info {
+      margin-bottom: 20px;
+      max-height: 500px;
+      width: 100%; } }
 
 /* 3. Stories Page ================================= */
 .hero2 h2 {

@@ -8,7 +8,7 @@ TABLE OF CONTENTS:
 
 1. Nav
 2. Hero/Homepage
-3. Storie Page
+3. Stories Page
 
 ==============================================
 */
@@ -16,6 +16,10 @@ TABLE OF CONTENTS:
 
 $font-stack: 'Poppins', sans-serif;
 $color:#E90081;
+
+*{
+	box-sizing:border-box;
+}
 
 h2{
 	font-family:$font-stack;
@@ -32,13 +36,7 @@ p{
 }
 
 
-// @media screen and (min-width:0px);{
-
-
-
 /* 1 NAV ================================= */
-
-
 
 .navcontainer{
 	display:flex;
@@ -88,11 +86,17 @@ p{
 
 	}
 
+// make hero image not backgound image
+// and change to image tag. Do a new
+// iamge tag in hmtl and display none
+// then displayblock t get it to come back 
+// in mobile query take off height once 
+// you get to mobile
 
 .petition{
 	background-color:#fff;
 	height:400px;
-	width:100%;
+	// width:100%;
 	margin:40px;
 	display:flex;
 	flex-wrap:wrap;
@@ -254,14 +258,9 @@ button{
 .info{
 	border: 2px solid $color;
 	width:20%;
-	max-height:85px;
-	overflow:hidden;
-
-		&:hover{
-			color:black;
-			max-height: 300px;
-			overflow: visible;
-		}
+	align-self: flex-start;
+	// max-height:85px;
+	// overflow:hidden;
 
 	h2{
 		color:$color;
@@ -272,89 +271,106 @@ button{
 
 	p{
 		color:black;
-		padding:20px;
+		padding:0;
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	&:hover{
+		color:black;
+	
+
+		p {
+			padding:20px;
+			max-height: 300px;
+		}
 	}
 
 }
 
 
-//  @media screen and (min-width:400px) and @media screen and (min-width:600px){
+ @media screen and (max-width:1024px){
 
-// .petition{
+.petition{
 
-// 	h2{
-// 		font-size: 1.5em;
-// 		text-align: center;
-// 		margin-left:-32px;
-// 	}
+	h2{
+		font-size: 1.5em;
+		text-align: center;
+		// margin-left:-32px;
 
-// 	p{
-// 		font-size: 1em;
-// 		width: 350px;
-// 		margin:0;
+	}
 
-// 	}
+	p{
+		font-size: 1em;
+		width: 350px;
+		margin:0;
 
-// 	button{
-// 		width: 350px;
-// 		margin-left:-20px;
-// 	}
-// }
+	}
 
-// .trump{
+	button{
+		width: 350px;
+		margin-left:-20px;
+	}
+}
 
-// 	h2{
-// 		font-size: 1.5em;
-//     	width: 286px;
-//     	line-height: 1.2;
-// 	}
-// }
+.trump{
 
-// .impact{
+	h2{
+		font-size: 1.5em;
+    	width: 286px;
+    	line-height: 1.2;
+	}
+}
 
-// 	h2{
-// 		font-size: 1.2em;
-// 	}
+.impact{
 
-// 	p{
-// 		font-size: 12px;
-// 		width: 250px;
-// 	}
+	h2{
+		font-size: 1.2em;
+	}
 
-// 	a{
-// 		width: 20px;
-// 		font-size: 12px;
-// 		height: 20px;
-// 	}
-// }
+	p{
+		font-size: 12px;
+		width: 250px;
+	}
 
-// .atrisk{
-// 	 h2{
-// 	 	width: 300px;
-// 	 	font-size: 1.2em;
+	a{
+		width: 20px;
+		font-size: 12px;
+		height: 20px;
+	}
+}
 
-// 	 }
+.atrisk{
+	 h2{
+	 	width: 300px;
+	 	font-size: 1.2em;
 
-// 	 p{
-// 	 	font-size: 1em;
-// 	 	width: 300px;
-// 	 }
-// }
+	 }
 
-// .info-container{
-// 	display:flex;
-// 	height:600px;
+	 p{
+	 	font-size: 1em;
+	 	width: 300px;
+	 }
+}
+
+.info-container{
+	display:flex;
+	height:auto;
+	flex-direction:column;
+	width:100%;
 	
-// 	.info{
-// 		width: 200px;
-// 		flex-wrap:wrap;
-// 		max-height: 500px;
+	.info{
+		// width: 200px;
+		// flex-wrap:wrap;
+		margin-bottom: 20px;
+		max-height: 500px;
+		width: 100%;
 
-// 	}
+	}
 
-// }
+}
 
-// }
+}
 
 
 
@@ -377,8 +393,6 @@ button{
 	}
 
 }
-
-//emblem of read more below or button
 
 .hero2img{
 	background-image:url(../img/ppprotest.jpg);
