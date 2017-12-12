@@ -78,11 +78,16 @@ p{
 .hero{
 
 	height:800px; 
-	background-image:url(../img/headerBC.png);
-	background-repeat:no-repeat;
-	background-size:cover; 
-	background-position:20%;
-	background-attachment:fixed;
+	// background-image:url(../img/headerBC.png);
+	// background-repeat:no-repeat;
+	// background-size:cover; 
+	// background-position:20%;
+	// background-attachment:fixed;
+
+	img{
+		width: 100%;
+		height: 100%;
+	}
 
 	}
 
@@ -167,13 +172,14 @@ button{
 	a{
 		background-color:rgba(0,0,0,0);
 		height: 20px;
-		width: 100px;
+		width: 150px;
 		padding:20px;
-		padding-left: 31px;
+		// padding-left: 31px;
 		border: 2px solid white;
 		color:white;	
-		display: block;
-		margin: 0 auto;
+		// display: block;
+		margin: 0 auto 0 500px;
+		text-align: center; 
 
 	}
 	
@@ -204,23 +210,24 @@ button{
 	p{
 		color:white;
 		position:absolute;
-		top:40%;
+		top:56%;
 		width: 50%;
 		padding:40px;
 		font-size: 1.5em;
+
 	}
 
 	a{
 		position:absolute;
 		background-color:rgba(0,0,0,0);
 		height: 20px;
-		width: 100px;
-		padding:20px;
-		padding-left: 31px;
+		width: 150px;
+		padding: 20px 20px 36px 20px;
 		border: 2px solid $color;
 		color:$color;
 		top:70%;
 		left:80%;
+		text-align: center;
 	}
 }
 
@@ -291,21 +298,34 @@ button{
 
  @media screen and (max-width:1024px){
 
-.petition{
 
-	h2{
-		font-size: 1.5em;
-		text-align: center;
-		// margin-left:-32px;
+.hero{
+
+	height:500px;
+
+	img{
+		height: 500px;
 
 	}
+}
+
+.petition{
+
+	align-items:cetner;
+
+	h2{
+		font-size: 3em;
+		text-align: center;
+	}
+
 
 	p{
 		font-size: 1em;
 		width: 350px;
-		margin:0;
+		margin:0 auto 21px 45px;
 
 	}
+
 
 	button{
 		width: 350px;
@@ -325,17 +345,17 @@ button{
 .impact{
 
 	h2{
-		font-size: 1.2em;
+		font-size: 3em;
 	}
 
 	p{
-		font-size: 12px;
-		width: 250px;
+		font-size: 1em;
+		width: 50%;
 	}
 
 	a{
-		width: 20px;
-		font-size: 12px;
+		width: 100px;
+		font-size: 10px;
 		height: 20px;
 	}
 }
@@ -372,6 +392,40 @@ button{
 
 }
 
+
+@media screen and (max-width:600px){
+
+	.petition{
+
+		button{
+			margin-left:79px;
+		}
+	}
+
+	.trump{
+
+		a{
+			margin: 0 auto;
+		}
+	}
+
+	.impact{
+
+		h2{
+			font-size: 2em;
+		}
+
+		p{
+			width: 50%;
+			top:35%;
+		}
+
+		a{
+			left:70%;
+		}
+	}
+
+}
 
 
 /* 3. Stories Page ================================= */
