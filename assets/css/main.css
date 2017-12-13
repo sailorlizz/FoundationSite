@@ -51,10 +51,12 @@ p {
 
 /* 2 Hero/HomePage ================================= */
 .hero {
-  height: 800px; }
-  .hero img {
-    width: 100%;
-    height: 100%; }
+  height: 800px;
+  background-image: url(../img/headerBC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+  background-attachment: fixed; }
 
 .petition {
   background-color: #fff;
